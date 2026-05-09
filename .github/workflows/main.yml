@@ -9,7 +9,8 @@ on:
 
 env:
   DOCKER_IMAGE_NAME: getting-started-app
-  NODE_VERSION: '18'
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  NODE_VERSION: '24'
 
 jobs:
   # Test and Build Job
